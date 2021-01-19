@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FerreteriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[FerreteriaController::class,'getIndex'] );
+
+Route::get('nosotros/historia', [FerreteriaController::class,'showHistoria'] );
+
+Route::get('nosotros/vision', [FerreteriaController::class,'showMision'] );
+
+Route::get('nosotros/ubicacion', [FerreteriaController::class,'showUbicacion']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
