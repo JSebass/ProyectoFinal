@@ -25,7 +25,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/login') }}">Administrador</a>
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/login') }}">Cliente</a>                
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/loginc') }}">Cliente</a>                
                 </div>
             </li>
               
