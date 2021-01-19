@@ -22,6 +22,8 @@ Route::get('nosotros/vision', [FerreteriaController::class,'showMision'] );
 
 Route::get('nosotros/ubicacion', [FerreteriaController::class,'showUbicacion']);
 
+Route::get('registro/registrar', [FerreteriaController::class,'showregistro']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

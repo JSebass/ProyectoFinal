@@ -20,4 +20,7 @@ class FerreteriaController extends Controller
     public function showUbicacion(){
         return view('nosotros.ubicacion');
     }
+    public function showregistro(){
+        return view('registro.registrar');
+    }
 }
