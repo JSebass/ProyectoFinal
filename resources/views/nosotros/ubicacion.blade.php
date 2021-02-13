@@ -17,7 +17,7 @@
     <form action="{{ url('categorias/registro') }}" method="POST">
         @csrf
        
-        <label for="nombreCat">Nombre Categoria </label>
+        <label for="nombreCat">Nombre Categori </label>
         <input type="text" id='nombreCat' name='nombreCat' class="form-control" required> <br> <br>
     
         <label for="descripcionCat">Descripcion </label>
