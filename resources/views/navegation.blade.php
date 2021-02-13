@@ -25,9 +25,16 @@
                 Cliente
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<<<<<<< HEAD
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/register') }}">Registrar</a>
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/') }}">Iniciar Sesion</a>
                 
+=======
+
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/loginA') }}">Administrador</a>
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/login') }}">Cliente</a>                
+
+>>>>>>> 5a3c622fda5cb40c6e3481937232dc182089471b
                 </div>
             </li>
               

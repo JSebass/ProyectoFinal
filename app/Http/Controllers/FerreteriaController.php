@@ -23,4 +23,5 @@ class FerreteriaController extends Controller
     public function showregistro(){
         return view('registro.registrar');
     }
+    
 }
