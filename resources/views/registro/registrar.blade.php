@@ -1,22 +1,47 @@
 @extends('master')
    @section('content')
- <div >    
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">ID producto</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Cantidad</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Precio</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Registrar</button>
-</form>
-</div>
+   
+    <h1> Formulario de Registro </h1>
+
+    <form action="{{route('registrarProducto')}}" method= "POST">
+        @csrf
+        <!-- Etiquetas de tipo text con un value asignado -->
+        <div class="form-group">
+            <label for="nombrePro">Nombre </label>
+            <input type="text" id="nombrePro" name="nombrePro"  class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+
+         <!-- Etiquetas de tipo number -->
+        <div class="form-group">
+            <label for="cantidadPro">Cantidad </label>
+            <input type="number" id='cantidadPro' name='cantidadPro' min='1' max='1000' class="form-control" placeholder="Cantidad">
+        </div>
+
+         <!-- Etiquetas de tipo number -->
+         <div class="form-group">
+            <label for="precioPro">Precio </label>
+            <input type="number" id='precioPro' name='precioPro' min='100'  class="form-control" placeholder="Cantidad">
+        </div>
+
+         <!-- Etiquetas de tipo file -->
+         <div class="form-group">
+            <label for="fotoPro">Sube la foto:</label> 
+            <input type="file" name="fotoPro" id="fotoPro" class="form-control-file">
+        </div>
+
+         <!-- Etiquetas de tipo Select -->
+        <label for="productos">Productos</label> 
+        <select class="custom-select" id="productos" name="categorias">
+            @foreach($categorias as $c)
+            <option value="{{$c->id}}">{{$c->nombreCategoria}}</option>
+            @endforeach
+        </select>
+
+        <br> <br>
+         <!-- Etiquetas de tipo button -->
+        <button type="submit" class="btn btn-primary">Registrar</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+    </form>
+
 @stop
