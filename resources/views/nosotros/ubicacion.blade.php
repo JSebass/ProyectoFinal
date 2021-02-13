@@ -9,9 +9,7 @@
             </hr>
 
         </div>
-        @extends('master')
-   @section('content')
- 
+        
 <div class="container">
 <h1> Registro de Categorias </h1>
     <form action="{{ url('categorias/registro') }}" method="POST">
@@ -26,5 +24,5 @@
         <button type="submit" class="btn btn-success">Registrar </button>
 
     </form>
-@stop
+
 @stop
