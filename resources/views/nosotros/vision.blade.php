@@ -8,27 +8,28 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="{{ url('/imagenes/2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ url('/imagenes/ferre4.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Mision</h5>
+                <h5>NUESTRA MISIÓN</h5>
                 <p>
-                    Somos una empresa privada, líder en la prestación de servicios hoteleros, 
-                    orientada principalmente a los sectores comercial y empresarial, que ofrece una atención personalizada y 
-                    amable con calidad, desarrollando productos y servicios que garantizan la satisfacción y las expectativas 
-                    del cliente. Contamos con un talento humano comprometido, en permanente desarrollo y mejoramiento continuo, 
-                    que nos permite ampliar y mantener el mercado brindando total seguridad a empleados, clientes, proveedores, 
-                    socios y comunidad en general.
+                
+                FERRETERIA J&J, es una empresa nariñense comprometida en proporcionar productos y servicios 
+                con alta calidad y con excelentes precios, a través de la gestión eficiente y eficaz de un selecto 
+                equipo de colaboradores entrenados para satisfacer las expectativas y necesidades de los clientes.
                 </p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="{{ url('/imagenes/3.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ url('/imagenes/ferre3.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Vision</h5>
+                <h5>NUESTRA VISIÓN</h5>
                 <p>
-                    Ser en el año 2021 el hotel mas reconocido en Pasto, tanto por su infrestructura como sus servicios.   
-                    Brindando atención de excelente calidad, con unas instalaciones modernas dirigidas a clientes del sector 
-                    comercial y empresarial que visitan la ciudad, contando con una alta ocupación a nivel nacional e internacional.
+                
+                    Para el 2021 FERRETERIA J&J busca consolidarse como líder en la región, 
+                    captando nuevos segmentos del mercado, mediante la comercialización de nuevos productos y prestación de nuevos servicios.
+                    Esto lo lograremos basándonos en nuestro personal y en el apoyo permanente de las principales fábricas del país, 
+                    y a través del mejoramiento continuo de nuestros procesos y de nuestra capacidad de adaptarnos a los cambios 
+                    del entorno desarrollando un crecimiento permanente.
                 </p>
             </div>
             </div>            

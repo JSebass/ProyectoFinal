@@ -16,7 +16,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/nosotros/historia') }}">Historia</a>
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/nosotros/vision') }}">Mision Y Vision</a>
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/nosotros/ubicacion') }}">Ubicaión</a>
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/nosotros/ubicacion') }}">Ubicación</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -24,8 +24,10 @@
                 Iniciar Sesión
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/loginA') }}">Administrador</a>
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/loginC') }}">Cliente</a>                
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/login') }}">Cliente</a>                
+
                 </div>
             </li>
               
