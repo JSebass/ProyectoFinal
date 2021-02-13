@@ -19,15 +19,22 @@
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/nosotros/ubicacion') }}">Ubicación</a>
                 </div>
             </li>
+            
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" style="font: oblique bold 120% cursive;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Iniciar Sesión
+                Cliente
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<<<<<<< HEAD
 
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/loginA') }}">Administrador</a>
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/login') }}">Cliente</a>                
 
+=======
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/register') }}">Registrar</a>
+                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/') }}">Iniciar Sesion</a>
+                
+>>>>>>> f6a8588398d6e7502785b953db725f63102196bb
                 </div>
             </li>
               
