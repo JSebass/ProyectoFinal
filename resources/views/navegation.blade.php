@@ -22,30 +22,12 @@
             
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" style="font: oblique bold 120% cursive;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Cliente
+                Iniciar Sesion
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/register') }}">Registrar</a>
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/') }}">Iniciar Sesion</a>
-                
-=======
->>>>>>> 6d4790a748ee405400b3dccb3f93eade701b7c6f
 
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/loginA') }}">Administrador</a>
                 <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/login') }}">Cliente</a>                
-
-<<<<<<< HEAD
-=======
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/register') }}">Registrar</a>
-                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/') }}">Iniciar Sesion</a>
-                
->>>>>>> f6a8588398d6e7502785b953db725f63102196bb
-=======
->>>>>>> 5a3c622fda5cb40c6e3481937232dc182089471b
->>>>>>> 6d4790a748ee405400b3dccb3f93eade701b7c6f
                 </div>
             </li>
               
