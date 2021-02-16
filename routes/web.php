@@ -5,6 +5,7 @@ use App\Http\Controllers\FerreteriaController;
 use App\Http\Controllers\productos;
 use App\Models\Role;
 use App\Models\User;
+use App\Models\Permission;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,7 +42,7 @@ Route::get('/test',function(){
     
 
 
-    $user = User::find(1);
+    //$user = User::find(1);
 
     /*
         en: create new record
@@ -61,9 +62,20 @@ Route::get('/test',function(){
         en: removes from the database the roles that are not in the array as well as creates those records that are not in the database.
         es: elimina de la base de datos los roles que no estén en el array asi como tambien crea aquellos registros que no estén en la base de datos.
     */ 
-    $user->roles()->sync([1,2]);
+    //$user->roles()->sync([1,2]);
 
-    return $user->roles;
+    //return $user->roles;
+    /* return   Permission::create([
+        'name' => 'Crear producto',
+        'slug' => 'productos.crear',
+        'description' => 'el ususario puede crear producto',
+        
+    ]);*/
+    $role = Role::find(1);
+
+    $role->permissions()->sync([1,2]);
+
+    return $role->permissions;
 });
 
 Route::get('nosotros/historia', [FerreteriaController::class,'showHistoria'] );
