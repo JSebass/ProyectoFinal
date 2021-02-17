@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master2')
    @section('content')
    
     <h1> Formulario de Registro </h1>

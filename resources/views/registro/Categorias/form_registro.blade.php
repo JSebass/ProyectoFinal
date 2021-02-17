@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master2')
    @section('content')
 <div class="container">
 <h1> Registro de Categorias </h1>

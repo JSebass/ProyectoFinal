@@ -1,3 +1,4 @@
+
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,8 +12,38 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Bienvenido') }}
                     </x-nav-link>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font: oblique bold 120% cursive;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                         <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/productos/registro') }}">Registro Producto</a>
+                         <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/productos') }}">Listado Producto</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font: oblique bold 120% cursive;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/categorias/registro') }}">Registro Categoria</a>
+                                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/categorias') }}">Listado Categoria</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font: oblique bold 120% cursive;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Clientes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/clientes/registrar') }}">Registro Cliente</a>
+                                <a class="dropdown-item" style="font: oblique bold 120% cursive;" href="{{ url('/clientes') }}">Listado Cliente</a>
+                        </div>
+                    </li>
                 </div>
             </div>
+            
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -94,3 +125,4 @@
         </div>
     </div>
 </nav>
+

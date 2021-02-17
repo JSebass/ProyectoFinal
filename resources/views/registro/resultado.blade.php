@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master2')
    @section('content')
 <h4> Producto </h4>
 <div>

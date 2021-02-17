@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master2')
    @section('content')
 <h1> Formulario de Consulta </h1>
     <form action="{{route('consulta_productos')}}" method= "POST">

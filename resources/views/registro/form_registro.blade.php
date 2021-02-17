@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master2')
    @section('content')
    
     <h1> Registro Producto </h1>
