@@ -42,6 +42,14 @@ public function formularioReg(){
         return redirect()->route('listadoProductos');
         
     }
+    
+    public function eliminar($id){
+        $product = Producto::findOrFail($id);
+        $product->delete();
+        return redirect()->route('listadoProductos');
+    }
+
+
 
     public function formularioAct($id){
         $producto = Producto::findOrFail($id);
