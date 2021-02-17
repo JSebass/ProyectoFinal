@@ -3,39 +3,39 @@
    
     <h1> Formulario de Registro </h1>
 
-    <form action="{{route('registrarProducto')}}" method= "POST">
+    <form >
         @csrf
         <!-- Etiquetas de tipo text con un value asignado -->
         <div class="form-group">
-            <label for="nombrePro">Nombre </label>
-            <input type="text" id="nombrePro" name="nombrePro"  class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <label for="idReg">ID </label>
+            <input type="number" id="idReg" name="idReg"  class="form-control" placeholder="ID" aria-label="Recipient's username" aria-describedby="basic-addon2">
         </div>
 
+         
+        
+
          <!-- Etiquetas de tipo number -->
+         <div class="form-group">
+            <label for="fechaReg">Fecha de Registro </label>
+            <input type="date" id='fechaReg' name='fechaReg' min='100'  class="form-control" placeholder="Fecha de Registro">
+        </div>
+
+        <!-- Etiquetas de tipo number -->
         <div class="form-group">
-            <label for="cantidadPro">Cantidad </label>
-            <input type="number" id='cantidadPro' name='cantidadPro' min='1' max='1000' class="form-control" placeholder="Cantidad">
+                    <label for="cantidadReg">Cantidad </label>
+                    <input type="number" id='cantidadReg' name='cantidadReg' min='1' max='1000' class="form-control" placeholder="Cantidad">
         </div>
 
-         <!-- Etiquetas de tipo number -->
-         <div class="form-group">
-            <label for="precioPro">Precio </label>
-            <input type="number" id='precioPro' name='precioPro' min='100'  class="form-control" placeholder="Cantidad">
+        <div class="form-group">
+            <label for="administradorReg">ID Administrador</label>
+            <input type="number" id='administradorReg' name='administradorReg'   class="form-control" placeholder="Admin">
         </div>
 
-         <!-- Etiquetas de tipo file -->
-         <div class="form-group">
-            <label for="fotoPro">Sube la foto:</label> 
-            <input type="file" name="fotoPro" id="fotoPro" class="form-control-file">
+        <div class="form-group">
+            <label for="idproReg">ID Producto </label>
+            <input type="number" id='idproReg' name='idproReg' min='100'  class="form-control" placeholder="Producto">
         </div>
-
-         <!-- Etiquetas de tipo Select -->
-        <label for="productos">Productos</label> 
-        <select class="custom-select" id="productos" name="categorias">
-            @foreach($categorias as $c)
-            <option value="{{$c->id}}">{{$c->nombreCategoria}}</option>
-            @endforeach
-        </select>
+        
 
         <br> <br>
          <!-- Etiquetas de tipo button -->

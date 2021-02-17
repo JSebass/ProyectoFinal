@@ -11,7 +11,7 @@ class FerreteriaController extends Controller
         return view('principal');
     }
     public function showHistoria(){
-        return view('nosotros.Historia');
+        return view('nosotros.historia');
         
     }
     public function showMision(){
@@ -20,8 +20,7 @@ class FerreteriaController extends Controller
     public function showUbicacion(){
         return view('nosotros.ubicacion');
     }
-    public function showregistro(){
-        return view('registro.registrar');
-    }
+    
+    
     
 }
